@@ -1,9 +1,18 @@
 {
-    "doctype-first": true,
-    "doctype-html5": true,
-    "tag-pair": true,
-    "tag-self-close": true,
-    "spec-char-escape": true,
-    "id-unique": true,
-    "src-not-empty": true
-}
+    "connector": {
+      "name": "local",
+      "options": {
+        "pattern": ["**", "!.git/**", "!node_modules/**"]
+      }
+    },
+    "extends": ["development"],
+    "formatters": ["stylish"],
+    "hints": [
+      "button-type",
+      "disown-opener",
+      "html-checker",
+      "meta-charset-utf-8",
+      "meta-viewport",
+      "no-inline-styles:error"
+    ]
+  }
